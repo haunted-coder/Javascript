@@ -1,6 +1,9 @@
-function  myfunction()  {
+var person={
+name:"I",
+age:23
 
-var a = 4;
-document.getElementById("demo").innerHTML = a*a;
 
 }
+
+
+document.getElementById("demo").innerHTML = person.name+"am"+person.age+"years old";
