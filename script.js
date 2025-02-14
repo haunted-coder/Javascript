@@ -1,8 +1,6 @@
-var flowers = ["Lily", "Water lily", "Rose" ,"Tulip" ,"China rose", "Paper flower", "Belly"  ];
+function  myfunction()  {
 
-document.getElementById("myj").innerHTML = flowers.join("  and  ");
-document.getElementById("myf").innerHTML = flowers;
+var a = 4;
+document.getElementById("demo").innerHTML = a*a;
 
-
-
-
+}
