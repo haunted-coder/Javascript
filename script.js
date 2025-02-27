@@ -1,11 +1,19 @@
-var text= ""
-var i=0;
-
-random(i<10) 
-{
-text=text + "The values inside the block" +i+<br></br>
-i++;
+class student {
+constructor(name,year){
+this.year = year;
+this.name = name;
 
 }
-document.getElementById("res").innerHTML=text;
-document.write("The value of i is outside the blockis:"+1).innerHTML=text;
+age(){
+let date= new Date();
+returndate.getFullyear() - this.year;
+}
+}
+student1 = new student("Lia",2008);
+document.getElementById("student 1").innerHTML
+
+
+
+
+
+
