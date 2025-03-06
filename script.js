@@ -1,20 +1,12 @@
-var mystudent ={
-name: "Tabrin",
-age: 13,
-grade: 7
-
-};
-var mystudentJSON = JSON.stringify(mystudent);  //STRIGFIED VERSION
-var newstudentobject = JSON.parse(mystudentJSON)  //CONVERTED TO OBJECT
+function validateform() {
 
 
-
-document.getElementById("result").innerHTML = newstudentobject.grade
+    var x = document.forms["myform"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      } else document.write("Name submitted");
 
 
 
-document.getElementById("result").innerHTML = " My name is " + newstudentobject.name + " I study in grade " + newstudentobject.grade
-
-
-
-
+}
