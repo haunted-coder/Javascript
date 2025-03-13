@@ -1,15 +1,20 @@
-var choice = prompt("Welcome to Area Calculator.  \n please enter your choice \n 1. AREA OF RECTANGLE.\n 2. AREA OF CIRCLE. \n 3. AREA OF PARALLELLOGRAM \n 4. AREA OF TRIANGLE")
+function validateForm() {
+    // Get values from the form
+    const name = document.getElementById("name").value;
+    const age = parseInt(document.getElementById("age").value);
 
-if(choice == '1') {
+    // Check if name is valid
+    if (name.trim() === "") {
+        alert("Name is required.");
+        return false;
+    }
 
+    // Check if age is 18 or greater
+    if (isNaN(age) || age < 18) {
+        alert("You must be 18 or older to submit this form.");
+        return false;
+    }
 
-var length =prompt('ENTER THE LENGTH');
-var BREADTH =prompt('ENTER THE BREADTH');
-var RESULT = Number(length)* Number(BREADTH)
-alert("The area is " + RESULT)
-
-
+    // If everything is valid, allow form submission
+    return true;
 }
- 
-
-

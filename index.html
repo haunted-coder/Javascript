@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Validation Form</title>
+    <script>
+    </script>
 </head>
 <body>
-    
+    <h2>Personal Information Form</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="class">Class:</label><br>
+        <input type="text" id="class" name="class"><br><br>
+
+        <label for="grade">Grade:</label><br>
+        <input type="text" id="grade" name="grade"><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
-<script src="script.js"></script>
 </html>
