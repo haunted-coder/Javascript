@@ -1,20 +1,16 @@
-function validateForm() {
-    // Get values from the form
-    const name = document.getElementById("name").value;
-    const age = parseInt(document.getElementById("age").value);
-
-    // Check if name is valid
-    if (name.trim() === "") {
-        alert("Name is required.");
-        return false;
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
     }
-
-    // Check if age is 18 or greater
-    if (isNaN(age) || age < 18) {
-        alert("You must be 18 or older to submit this form.");
-        return false;
-    }
-
-    // If everything is valid, allow form submission
-    return true;
+    return color;
 }
+
+
+function changeBackgroundColor() {
+    document.body.style.backgroundColor = getRandomColor();
+}
+
+
+setInterval(changeBackgroundColor, 1000);
