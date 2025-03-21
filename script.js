@@ -33,7 +33,22 @@ buttonreset.onclick=function(){
 }
 function startTimer(){
 milliseconds++;
+if (milliseconds <=9) {
+ {
 
+        } else {
+            isRunning = false;
+            startStopButton.textContent = 'Start';
+            runningTime += difference;
+            clearInterval(tInterval);
+        }
+    }
+
+
+
+
+    
+}
 
 
 
