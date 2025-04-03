@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+  <title>navgation</title>
+  <style>
     body {
-        text-align: center;
-        font-family: serif, Arial, Helvetica, sans-serif;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    #dice {
-        font-size: 320px;
+    .topnav {
+      overflow: hidden;
+      background-color: #430404;
     }
 
-    #dice:hover {
-        cursor: pointer;
+    .topnav a {
+      float: left;
+      color: rgb(206, 100, 118);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
     }
-</style>
+
+    .topnav a:hover {
+      background-color: rgb(28, 3, 52);
+      color: rgb(175, 145, 216);
+    }
+
+    .topnav a.active {
+      background-color: rgb(2, 65, 25);
+      color: rgb(65, 235, 22);
+    }
+  </style>
+</head>
+
 <body>
-    <div>Click on the dice...</div>
-    <div id="dice" onclick="stopstart()"></div>
-
+  <div class="topnav">
+    <a href="index.html">home</a>
+    <a class="active" href="about.html">about</a>
+    <a href="contactme.html">contact me</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
 </body>
-<script src="SCRIPT.JS"></script>
 
-
-</body>
 </html>
