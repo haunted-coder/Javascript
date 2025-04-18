@@ -1,0 +1,6 @@
+print("Hello wolrd")
+print("My name is Tabrin Anan")
+print("My hobby is Painting, drawing, reading books")
+print("I read in class 7")
+print("I love playing football")
+print("I have two siblings")
